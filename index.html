@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andarayan National High School | Official Information Portal</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Connect to CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== WELCOME SPLASH — Shows Once On First Load ===== -->
+<div id="welcome-splash">
+  <div class="splash-content">
+    <h1>Andarayan National High School</h1>
+    <p>Official Information Portal</p>
+    <div class="splash-line"></div>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">ANHS</a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="academic.html">Academic</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="rules.html">Rules</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- HOME SECTION -->
+  <section id="home">
+    <div class="container">
+      <h1>Andarayan National High School</h1>
+      <p class="subtitle">Official Information Portal</p>
+      
+            <div class="intro-text">
+        <p>Welcome to Andarayan National High School! We are proud to be a place where students learn, grow, and discover what they can become. Our school is built on care, respect, and the belief that every learner deserves the chance to shine and build a bright future.</p>
+        
+        <h3>Our Mission</h3>
+        <p>To give every student the best education possible — one that is fair, helpful, and truly makes a difference. We teach more than just lessons: we build good character, useful skills, and the confidence to do well in life. We work together with families and the community to help every young person reach their dreams.</p>
+        
+        <h3>Our Vision</h3>
+        <p>We see Andarayan National High School as a place of excellence where students become honest, kind, and capable leaders. Our graduates leave ready to help their families, serve our community, and make the world a better place — today and always.</p>
+      </div>
+
+      <!-- AUTO-SCROLLING GALLERY -->
+      <div class="gallery-wrap">
+        <div class="gallery-track">
+          <div class="gallery-card"><img src="wal.png" alt="School Building"></div>
+          <div class="gallery-card"><img src="Wall.png" alt="Campus Grounds"></div>
+          <div class="gallery-card"><img src="Anhs.png" alt="Classroom"></div>
+          <div class="gallery-card"><img src="S.png" alt="Students"></div>
+          <div class="gallery-card"><img src="A.png" alt="Library"></div>
+          <div class="gallery-card"><img src="D.png" alt="School Facilities"></div>
+          <!-- Duplicate for smooth loop -->
+          <div class="gallery-card"><img src="wal.png" alt="School Building"></div>
+          <div class="gallery-card"><img src="Wall.png" alt="Campus Grounds"></div>
+          <div class="gallery-card"><img src="Anhs.png" alt="Classroom"></div>
+          <div class="gallery-card"><img src="S.png" alt="Students"></div>
+          <div class="gallery-card"><img src="A.png" alt="Library"></div>
+          <div class="gallery-card"><img src="D.png" alt="School Facilities"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  
+<!-- Online Submission Portal -->
+<section class="submission-section">
+  <div class="container">
+    <div class="submission-card">
+      <h2>📤 Online Submission Portal</h2>
+      <p>Submit school forms, requirements, and documents anytime — fast, easy, and safe.</p>
+      
+      <div class="submission-types">
+        <p>📋 Enrollment & Pre-Registration</p>
+        <p>📝 Excuse Letters & Absence Notices</p>
+        <p>📑 Project Outputs & Assignments</p>
+        <p>📄 Scholarship & Other Applications</p>
+      </div>
+
+      <a href="https://forms.gle/zQ3Rs1Mgty6Lk8LaA" target="_blank" class="submit-btn">
+        Go to Submission Form
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Andarayan National High School</h3>
+        <p>Andarayan, Philippines</p>
+        <p>Official Information Portal</p>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>📍 Andarayan, Solana, Cagayan</p>
+        <p>📞 [School Phone Number]</p>
+        <p>✉️ [School Email Adress]</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="people.html">People</a></p>
+        <p><a href="academic.html">Academic</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Developed by [Your Names] — Research Capstone Project 2026</p>
+      <p>© 2026 Andarayan National High School. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  
+  <!-- Floating Calendar -->
+<div class="calendar-container">
+  <div class="date-display" id="dateToggle"></div>
+  <div class="calendar-popup" id="calendarPopup">
+    <div class="calendar-header">
+      <button id="prevMonth">&lt;</button>
+      <span id="monthYear"></span>
+      <button id="nextMonth">&gt;</button>
+    </div>
+    <div class="calendar-days-names">
+      <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+    </div>
+    <div class="calendar-dates" id="calendarDates"></div>
+  </div>
+</div>
+  
+<!-- Slide-Out Updates Panel — LEFT SIDE -->
+<div class="updates-panel">
+  <div class="updates-drawer" id="updatesDrawer">
+    <h3>🔄 Website Updates</h3>
+    
+    <div class="update-block">
+      <h4>✅ Now Live</h4>
+      <ul>
+        <li>Online Submission Portal</li>
+        <li>School Calendar & Date Picker</li>
+        <li>Mission, Vision & Strands Info</li>
+      </ul>
+    </div>
+
+    <div class="update-block">
+      <h4>🚧 Coming Soon</h4>
+      <ul>
+        <li>Quick Announcement Banner</li>
+        <li>Class Schedule & Bell Guide</li>
+        <li>School Events Calendar</li>
+        <li>Who to Contact Directory</li>
+        <li>Quick Links Shortcuts</li>
+        <li>Feedback & Concern Form</li>
+        <li>Photo Gallery Expansion</li>
+      </ul>
+    </div>
+
+    <p class="update-note">Check back often — we keep improving!</p>
+  </div>
+  
+  <button class="updates-toggle" id="updatesToggle">
+    <span id="toggleLabel">Updates</span>
+  </button>
+</div>
+
+<!-- Connect to JavaScript file -->
+<script src="script.js"></script>
+  
+</body>
+</html>
